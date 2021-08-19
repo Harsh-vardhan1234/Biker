@@ -1,0 +1,44 @@
+#myimage{
+    text-align: center;
+}
+#RightWheel{
+    animation: rotatemywheel 2s ease infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+#LeftWheel{
+    animation: rotatemywheel 2s ease infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+@keyframes rotatemywheel{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#Biker,#Hat{
+    animation: movebiker 1s ease infinite alternate;
+    transform-origin: bottom;
+}
+@keyframes movebiker{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(30deg);
+    }
+}
+#Background{
+    animation: movemybackground 1.6s ease infinite alternate;
+}
+@keyframes movemybackground{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(20deg);
+    }
+
